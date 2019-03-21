@@ -10,7 +10,7 @@ const express = require('express');
 // express() 실행을 하여 웹 서버 인스턴스를 생성한다. 
 const app = express();
 
-// 우리의 웹 인스턴스가, Response 텍스트로부터 JSON 데이터를 파싱할 수 있게 한다.
+// 우리의 웹 인스턴스가, 클라이언트의 Request 로부터 JSON 데이터를 파싱할 수 있게 한다.
 app.use(express.json());
 
 // "view engine" 이란, 템플릿 파일들을 적절히 처리하여, html으로 변환한 뒤 
