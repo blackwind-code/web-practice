@@ -1,0 +1,28 @@
+h2 
+{
+    color: blue;
+}
+
+.heading
+{
+    background-color: lime;
+    padding: 20px;
+}
+
+.main
+{
+    background-color: orange;
+    padding: 20px;
+}
+
+.footer 
+{
+    background-color: skyblue;
+    padding: 20px;
+}
+
+#footer-text
+{
+    color: red;
+    font-weight: 700;
+}

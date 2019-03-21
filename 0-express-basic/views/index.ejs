@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hello, World!</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' href="public/style.css">
+</head>
+
+<body>
+
+    <div class="heading">
+        <h2>반갑다! 고객.</h2>
+        <p>당신의 집을 불태우는데 주저하지 않는다.</p>
+    </div>
+
+    <div class="main">
+        <img src="public/image.jpeg">
+        <!-- 아래 부분의 변수들을 ejs가 렌더링 한다. -->
+        <p>당신의 IP 주소: <%= ip_addr %> 를 추적하였다.</p>
+        <p><%= text %></p>
+        <input type="text" id="text-input" placeholder="뭔가를 쓰시오">
+        <button onclick="buttonClick()">누르시오</button>
+    </div>    
+
+    <div class="footer">
+        <p id="footer-text">아직 아무것도 없다.</p>
+    </div>
+</body>
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="public/index.js"></script>
+
+</html>
