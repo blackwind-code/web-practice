@@ -85,6 +85,8 @@ app.get('/api', function(req, res) {
         {   response_text += "때리"}
     }
 
+    console.log("보낼 답변 메시지: " + response_text);
+
     // 이 라우트로의 요청에 대한 답변은 JSON 형식으로 클라이언트에게 보낸다.
     let return_data = {
         msg: response_text
@@ -103,7 +105,9 @@ app.get('/api', function(req, res) {
 // [---------------------------------------------   Start web server   -----------------------------------------------]
 
 // 웹 서버를 시작하고, 서버의 80번 포트로 오는 요청을 처리하도록 한다.
-app.listen(80);
+const PORT = 80;
+app.listen(PORT);
+console.log("웹서버 작동, 포트: " + PORT + " 번에서 대기중...");
 // 웹 서버는 무한 루프에 빠진다. 종료하기 전까지는 항상 작동을 하고 있는 상태이며,
 // 우리가 상단에 정의한 라우트에 따라, 클라이언트에서 보내는 요청을 적절히 처리한다.
 
